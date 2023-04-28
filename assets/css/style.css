@@ -1,0 +1,146 @@
+
+@import "custom.css";
+
+
+/* Components */
+.navbar {
+  border-bottom: 4px solid var(--red);
+}
+
+.credit-card-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: var(--gray);
+    size: 1.375rem;
+}
+
+.credit-card-list i{
+    color: var(--red);
+    font-size: 1.75rem;
+    width: 2.5rem;
+    text-align: center;
+}
+
+@media (min-width: 992px) {
+
+    .credit-card-list{
+        display: flex;
+        flex-wrap: wrap;
+    }   
+    .credit-card-list li{
+        flex: 0 0 50%;
+    }
+}
+
+.about {
+    background: url("../images/bg-company.jpg") center center;
+    background-size: cover;
+}
+
+.about-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1.125rem;
+}
+
+.about-list i{
+    font-size: 1.5rem;
+    width: 2rem;
+    text-align: center;
+}
+
+.faq {
+    background-color: #483750;
+    color: white;
+}
+
+.faq .nav-link{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    color: white;
+    font-size: 1.25rem;
+    opacity: 0.5;
+}
+
+.faq .nav-link i{
+    font-size: 2.8125rem;
+    width: 55px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.faq .nav-link.active{
+    background-color: transparent;
+    opacity: 1;
+}
+
+.faq .card {
+    background-color: #443a50;
+    border-color: #3b2e4a;
+}
+
+.faq .card-header{
+    background-color: #3b2e4a;
+}
+
+.faq .card-header .btn-link{
+    color: white;
+}
+
+.footer {
+    margin-top: 200px;
+    padding: 50px 0;
+    border-bottom: 4px solid var(--red);
+    background-color: #e0e0e0;
+}
+
+.footer-link {
+    width: 100%;    
+}
+
+@media (min-width: 768px){
+    .footer-link {
+        width: unset;
+    }
+}
+
+.footer-social {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-social a {
+    display: block;
+    padding: 10px;
+    font-size: 1.6rem;
+    color: var(--gray);
+}
+
+
+/* Login */
+.login {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right bottom, #7c3ab1, #b2342d);
+}
+
+
+
+.profile-icon{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    font-size: 1.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
